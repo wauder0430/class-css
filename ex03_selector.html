@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            CSS 구조(문법)
+            선택자 { 속성명: 값; }
+
+            CSS 선택자
+            1. 전체 선택자
+                - * {}
+                - 모든 태그(*)를 선택한다.
+
+            2. 태그 선택자
+                - 태그명 {}
+                - 태그명을 사용해서 태그를 선택한다.
+                - 장점: 쉽다.
+                - 단점: 같은 태그에 다른 서식 지정 불가능
+
+            3. 아이디 선택자
+                - <태그 id="">
+                - 태그가 가지는 id를 사용해 태그를 선택한다.
+                - 태그명#아이디 {}
+                - id는 문서내에 유일해야한다.
+                - 재사용 X
+
+            4. 클래스 선택자
+                - <태그 class="">
+                - 태그가 가지는 class를 사용해 태그를 선택ㅎ나다.
+                - 태그명.클래스 {}
+                - class는 중복값을 가질 수 있다.
+                - .클래스 {} // 주의!!!
+        */
+        /* div { color: red; }
+        h1 { color: blue; } */
+        /* * { color : blue; } */
+        /* div#div1 { color: yellow; }
+        div.divs { color: orange; } */
+        .divs{ color: blue; }
+    </style>
+</head>
+<body>
+    <!-- ex03_selector.html -->
+
+    <h1>CSS 선택자</h1>
+
+    <div id="div1">div 태그입니다.</div>
+    <div id="div2" class="divs">div 태그입니다.</div>
+    <div id="div3" class="divs">div 태그입니다.</div>
+    
+</body>
+</html>
