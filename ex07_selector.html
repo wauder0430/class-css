@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            CSS 선택자
+            1. 전체 선택자
+            2. 태그 선택자
+            3. 아이디 선택자
+            4. 클래스 선택자
+            5. 그룹 선택자
+            6. 자식 선택자
+            7. 자손 선택자
+
+            8. 인접 형제 선택자, Adjacent Sibling Selector
+                - 형제 선택자 + 선택자 {}
+                - 자식 선택자
+
+            9. 형제 선택자, Sibling Selector
+                - 형제 선택자 ~ 선택자 {}            
+                - 자손 선택자
+        */
+        /* div + div + p { color: blue; } */
+        div ~ p { color: orange; }
+    </style>
+</head>
+<body>
+    <!-- ex07_selector.html -->
+    <h1>형제 선택자</h1>
+
+    <p>p 태그입니다.</p>
+    <div>div 태그입니다.</div>
+    <div>div 태그입니다.</div>
+    <p>1. p 태그입니다.</p>
+    <p>p 태그입니다.</p>
+    <p>p 태그입니다.</p>
+    <div>div 태그입니다.</div>
+    <p>2. p 태그입니다.</p>
+    
+</body>
+</html>

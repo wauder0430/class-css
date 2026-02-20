@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            선택자가 중복 가능한가?
+            - 가능하다.
+            - 비추천
+            1. 속성 충돌X > 아무 문제 없이 모두 적용
+            2. 속성 충돌O > 마지막에 적용한 속성이 반영
+        */
+
+        /* div { color: blue; }
+        div { color: skyblue; } */
+
+        /* div { color: blue; }
+        div { color: yellow; } */
+        
+        /* 
+            여러 선택자 > 1개 태그에 중복 적용 > 속성 충돌 발생!!
+            - 선택자 우선 순위!!
+            - 점수 계산 > 점수가 가장 높은 선택자를 적용
+                        > 점수가 동일하면 > 마지막 선택자를 적용
+                        > 정확도를 올린다
+
+            1. 태그   선택자:     1점
+            2. 클래스 선택자:    10점
+            3. 아이디 선택자:   100점
+
+        */
+        /* 
+            1. 홍길동~ > 태그 선택자
+            2. 서울에 사는 홍길동~ > 클래스 선택자
+            3. 서울 대치동 은마 아파트 100동 홍길동~ > 아이디 선택자
+        
+        */
+
+        /* #box1 { color: orange; }
+        .box { color: red; }
+        div { color: blue; } */
+
+        /* div#box1.box { color:orange; }
+        #box1.box { color:blue; } */
+
+        /* #box1 { color: red; }
+        #box1 .box { color: blue; } */
+
+        #box1 { color: red; }
+        /* VSC선택기 특이성 확인
+           - 클래스가 아무리 모여도 아이디 하나보다 못함
+        */
+        .box.aaa.bbb.ccc.ddd.eee.fff.ggg.hhh.iii.jjj{
+            color: blue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- ex13_selector.html -->
+
+    <div id="box1" class="box aaa bbb ccc ddd eee fff ggg hhh iii jjj">상자</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div></div>
+    <div></div>
+
+    <!-- <p class="box">상자</p> -->
+</body>
+</html>
