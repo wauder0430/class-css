@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+
+            /*  */
+            /* overflow: auto; */
+            overflow-y: scroll;
+        }
+
+        /* 이미지의 오버플로우를 이용 */
+        #mail {
+            /* border: 1px solid black; */
+            width: 52px;
+            height: 52px;
+            background-image: url(images/sp_main.81f75259.png);
+            background-repeat: no-repeat;
+            background-position: -870px -348px;
+        }
+
+        #mail:hover{
+            background-position: -870px -298px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ex21_overflow.html -->
+    <h1>Overflow</h1>
+
+    <div id="box1">상자입니다.</div>
+
+    <h1>네이버 아이콘</h1>
+
+    <!-- <img src="..images/sp_main.81f75259.png> -->
+
+    <div id="mail"></div>
+
+</body>
+</html>

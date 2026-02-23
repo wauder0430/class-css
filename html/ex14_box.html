@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            CSS
+            1. 선택자 > 태그
+            2. 박스 모델(여러 속성)
+
+            박스 모델, Box Model
+            - HTML 모든 태그는 화면에 출력될 때 사각형으로 출력된다.
+            - 이 특징을 기반으로 적용되는 CSS 속성 > 박스 모델
+            테두리, border
+            - 모든 요소의 테두리 조작
+
+            
+        */
+
+        #div2 {
+            border-color: black;  /* 테두리 색상 */
+            border-width: 5px;      /* 테두리 두께 */
+            border-style: solid;    /* 테두리 타입(solid, dashed, dotted) */
+        }
+
+        #div1{
+            /* border-color: blue;
+            border-width: 10px;
+            border-style: solid; */
+            /* border: blue 10px solid; */
+
+            border-top: red 5px dashed;
+            border-bottom: green 5px dashed;
+            border-right:  orange 5px dashed;
+            border-left:  blue 5px dashed;
+        }
+
+        #div3 {
+            /* 
+                하나의 선택자 내에서 속성 간의 우위가 없다.
+                - 무조건 덮어쓰기(마지막 값 적용)
+            */
+            border: 10px solid blue;
+            /* border-top-color: red;
+            border-right-color: green;
+            border-bottom-color: yellow;
+            border-left-color: orange; */
+
+            /* 
+                방향성을 가지는 속성
+                - top(12시) > right > bottom > left;
+                - top(12시) > right/left > bottom
+                - top/bottom > right/left
+                - top/bottom/right/left
+            */
+            border-color: red green gold orange;
+        }
+
+        /* html {
+            border: 10px solid blue;
+        }
+
+        body {
+            border: 10px solid gold;
+        } */
+
+        h1 {
+            /* 밑줄 */
+            /* text-decoration: underline */
+
+            border-bottom: 3px dashed black;
+        }
+
+        .txt{
+            background-color: gold;
+            border: 1px solid #555;
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ex14_box.html -->
+    <h1>박스 모델</h1>
+    <!-- div#div$.box{상자$}*3 -->
+    <div id="div1" class="box">상자1</div>
+    <div id="div2" class="box">상자2</div>
+    <div id="div3" class="box">상자3</div>
+
+    <hr>
+
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+    <input type="text" class="txt"><br>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            float
+            - 요소를 일반적인 문서 흐름(normal flow)에서 벗어나 컨테이너의 왼쪽(left)이나 오른쪽(right)으로 띄워 배치하는 위치 지정 속성입니다.
+            - 요소가 자기 위치에 출력되지 않고 > 자신이 속한 라인의 맨 왼쪽끝/오른쪽 끝에 출력된다.
+        
+        */
+        
+        #p1 > span {
+            background-color: blue;
+            float: right;
+        }
+        #p2 > img {
+            float: right;
+        }
+        h1{
+            border-bottom: 1px dashed #555;
+            /* text-align: right; */
+        }
+        h1 > small {
+            float:right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ex25_float.html -->
+    <h1>텍스트 <small>float</small></h1>
+    
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione, debitis omnis repudiandae fuga architecto eius molestias nesciunt, veritatis vero laborum dicta ab delectus! Reiciendis quasi aliquam molestiae recusandae praesentium animi assumenda laboriosam itaque ut! Quidem ratione deleniti tenetur sint, minima dolorum, corrupti voluptas a fugiat **<span>홍길동</span>** temporibus, laboriosam nam. Blanditiis saepe fugiat, delectus pariatur et expedita non mollitia cupiditate eveniet. Ipsam dolores rerum fugiat dolore optio mollitia sint fugit quam officiis, nemo dignissimos corporis nesciunt! Provident at iusto fugiat ea in? Fugiat voluptatum quibusdam sapiente exercitationem ab nisi, facilis odio, dignissimos corrupti necessitatibus veritatis. Laboriosam maxime sint officia delectus error!</p>
+
+    <hr>
+
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione, debitis omnis repudiandae fuga architecto eius molestias nesciunt, veritatis vero laborum dicta ab delectus! Reiciendis quasi aliquam molestiae recusandae praesentium animi assumenda laboriosam itaque ut! Quidem ratione deleniti tenetur sint, minima dolorum, corrupti voluptas a fugiat **<img src="images/man_01.png">** temporibus, laboriosam nam. Blanditiis saepe fugiat, delectus pariatur et expedita non mollitia cupiditate eveniet. Ipsam dolores rerum fugiat dolore optio mollitia sint fugit quam officiis, nemo dignissimos corporis nesciunt! Provident at iusto fugiat ea in? Fugiat voluptatum quibusdam sapiente exercitationem ab nisi, facilis odio, dignissimos corrupti necessitatibus veritatis. Laboriosam maxime sint officia delectus error!</p>
+</body>
+</html>

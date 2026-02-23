@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            text-align 속성
+
+            정렬, Alignment
+            - 수평 정렬
+            - ex16.html 이어지는 예제
+
+            1. 인라인 태그
+                - 내용물의 수평 정렬이 불가능하다.(아무런 시각적 효과가 없음)
+                - 내용물의 크기 = 영역의 크기 > 움직일 공간이 없다.
+                - text-align > 사용 안함
+                - 스스로 정렬 불가능 > 부모(***블럭태그)의 text-align을 사용한다.(***)
+
+            2. 블럭 태그
+                - 내용물의 수평 정렬이 가능하다.
+                - 내용물의 크기 <> 영역의 크기 > 너비 100% > 움직일 공간이 있다.
+                - text-align > 사용 함
+                - width 지정 > 한 라인 독점 > 부모에 의해서 수평 정렬이 불가능
+                - 공식 > 블럭 태그는 수평 정렬이 불가능
+                       > 블럭 태그의 내용물 수평 정렬은 가능(text-align)
+                - 스스로 수평 정렬 > margin-left/margin-right > auto(***)
+        */
+
+        #span1 {
+            background-color: yellow;
+            text-align: center;
+        }
+
+        #div1 {
+            background-color: yellow;
+            text-align: center;
+            /* width: 20%;
+            margin-left: calc(50% -20%); */
+            width: 100px;
+            margin: 0px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ex19_align.html -->
+
+    <h1>인라인 태그의 수평 정렬</h1>
+    <div style="text-align: center;">
+    <span id="span1">강아지</span>
+    </div>
+
+    <h1>블럭 태그의 수평 정렬</h1>
+    <div style="text-align: center; background-color: orange; padding: 5px">
+        <div id="div1">고양이</div>
+    </div>
+
+</body>
+</html>
