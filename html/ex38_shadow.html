@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            그림자, shadow
+            1. text-shadow: x y blur color;
+            2. box-shadow : x y blur color;
+        */
+        #box {
+            text-shadow: 2px 2px 2px black;
+            box-shadow: 2px 2px 3px black;
+        }
+        .btn {
+            border: 1px solid #767676;
+            background-color: #ffffff;
+            padding: 4px 10px 6px;
+            cursor: pointer;
+        }
+        /* .btn:hover {
+            text-shadow: 0px 0px 1px black;
+        } */
+        .btn:hover > span {
+            text-shadow: 0px 0px 3px grey;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ex38_shadow.html -->
+    <h1>그림자</h1>
+
+    <div id="box">상자입니다.</div>
+    <hr>
+
+    <button class="btn">
+        <span>✒️</span>
+        글쓰기
+    </button>
+
+    <button class="btn">
+        <span>💾</span>
+        저장하기
+    </button>
+</body>
+</html>

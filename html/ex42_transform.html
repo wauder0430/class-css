@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 100px;
+        }
+        .box {
+            border: 10px solid black;
+            width: 150px; height: 150px; margin: 10px;
+        }
+        #box1 { background-color: tomato; }
+        #box2 { background-color: gold; }
+        #box3 { background-color: cornflowerblue; }
+
+        #box2 {
+            /*
+                변형, transform
+                - 요소의 위치, 크기(배율), 회전, 비틀기(왜곡)
+                - transform: 값;
+
+                값(함수)
+                1. translate()  : 위치 변형
+                2. scale()      : 크기(배율) 변형
+                3. rotate()     : 회전 변형
+                4. skew()       : 비틀기(왜곡) 변형
+                5. matrix()     : 행렬
+            */
+        
+            /* transform: translate(100px,100px); */
+            /* transform: scale(2, 2); */
+            /* transform: rotate(30deg); */
+            /* transform: skew(20deg, 30deg); */
+
+            
+
+        }
+
+        input[type=text] {
+                font-size: 3rem;
+                padding: 10px;
+                /* transform: scale(-1, 1); */
+        }
+
+        body {
+            /* transform: scale(-1, 1); */
+        }
+
+        /* #cat-list img:hover {
+            transform: translate(0px, -15px);
+        } */
+
+        #cat-list img:hover {
+            /* transform: translate(0px, -15px); */
+            transform: scale(1.4, 1.4) translate(0px, -18px) rotate(30deg);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ex42_transform.html -->
+    <h1>transform</h1>
+
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+    
+    <input type="text">
+
+    <hr>
+
+    <div id="cat-list">
+        <img src="images/catty01.png" alt="">
+        <img src="images/catty02.png" alt="">
+        <img src="images/catty03.png" alt="">
+        <img src="images/catty04.png" alt="">
+        <img src="images/catty05.png" alt="">
+    </div>
+
+</body>
+</html>

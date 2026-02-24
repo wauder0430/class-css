@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            padding: 200px;
+        }    
+        #box {
+            border: 10px solid black;
+            width: 200px; height: 200px;
+            background-color: gold;
+            /* transition-property: width height; */
+            transition-property: all;
+            transition-duration: 1s;
+            text-align: center;
+        }
+
+        body:hover #box {
+            /* background-color: tomato; */
+
+            /* 
+                전환, transition
+                - 객체의 속성값이 변화되는 과정을 시간 순으로 보여주는 기술 
+                - 애니메이션
+
+            */
+            /* width: 400px;
+            height:400px;
+            font-size: 4em; */
+            /* opacity: 0.2; */
+            /* background-color: cornflowerblue;
+            border-width: 50px;
+            border-color:orange; */
+
+            /* border-radius: 50%; */
+            /* margin-left: 300px; */
+            /* box-shadow: 10px 10px 5px #555; */
+            /* transform: translate(100px, 100px); */
+
+            /* transform: scale(2, 2); */
+            transform: rotate(360deg);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- ex43_transition.html -->
+    <h1>전환</h1>
+    
+    <div id="box">상자</div>
+    
+</body>
+</html>

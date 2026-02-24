@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/45b31704a3.js" crossorigin="anonymous"></script>
+    <style>
+        
+        /* 
+            border-radius: 모서리 둥글게
+            - 최대값: 단축의 1/2까지
+            - 절대값: 반지름
+            - 상대값: 대각선을 긋고 종회비를 맞춰 늘어남
+        */
+        #img1 {
+            border-radius: 94px;
+        }
+        #img2 { 
+            border-radius: 50%;
+        }
+
+        #list input {
+            display: block;
+            margin-bottom: 5px;
+            border: 1px solid #777;
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        .input {
+
+        }
+
+        .input > i {
+            border: 1px solid #555;
+            padding: 3px 5px;
+            background-color: #DEDEDE;
+            /* border-radius: 5px; */
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            float:left;
+        }
+
+        .input > input[type=text] {
+            border: 1px solid #555;
+            outline:none;
+            float:left;
+            padding: 3.4px;
+            border-left-width: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .input::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .input.red > i {
+            background-color: tomato;
+        }
+
+        .input.yellow > i {
+            background-color: gold;
+        }
+
+        .input.blue > i {
+            background-color: powderblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ex39_border.html -->
+    <h1>테두리</h1>
+    
+    <div>
+        <img src="images/dog01.jpg" id="img1">
+        <img src="images/dog01.jpg" id="img2">
+    </div>
+
+    <hr>
+
+    <div id="list">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+
+    <hr>
+
+    <i class="fa-brands fa-sistrix" style="font-size:2em"></i>
+    <span style="font-size:2em">🔍</span>
+
+    <hr>
+    <br>
+    <div class="input red">
+        <i class="fa-brands fa-sistrix"></i>
+        <input type="text">
+    </div>
+
+    <br>
+    <div class="input yellow">
+        <i class="fa-regular fa-floppy-disk"></i>
+        <input type="text">
+    </div>
+
+    <br>
+    <div class="input blue">
+        <i class="fa-solid fa-trash-can"></i>
+        <input type="text">
+    </div>
+
+
+</body>
+</html>
